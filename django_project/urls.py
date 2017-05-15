@@ -10,3 +10,9 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^', include('homepage.urls')),
 )
+
+# Error handlers
+handler400 = 'homepage.errors.bad_request'
+handler403 = 'homepage.errors.permission_denied'
+handler404 = 'homepage.errors.page_not_found'
+handler500 = 'homepage.errors.server_error'

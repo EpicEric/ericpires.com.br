@@ -1,9 +1,6 @@
 from django.conf.urls import url
 from django.views.generic import RedirectView
-from django.conf.urls import (
-    handler400, handler403, handler404, handler500
-)
-from . import views
+from . import views, errors
 
 urlpatterns = (
     url(r'^portfolio$', views.portfolio, name='portfolio'),
@@ -19,7 +16,7 @@ urlpatterns = (
 )
 
 # Error handlers
-handler400 = 'homepage.errors.bad_request'
-handler403 = 'homepage.errors.permission_denied'
-handler404 = 'homepage.errors.page_not_found'
-handler500 = 'homepage.errors.server_error'
+#handler400 = errors.bad_request
+#handler403 = errors.permission_denied
+#handler404 = errors.page_not_found
+#handler500 = errors.server_error

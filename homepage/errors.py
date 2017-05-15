@@ -2,32 +2,29 @@ from django.shortcuts import render, render_to_response
 
 # handler400
 def bad_request(request):
-    response = render_to_response(
+    return render_to_response(
         'errors/400.html',
+        status=400
     )
-    response.status_code = 400
-    return response
 
 # handler403
 def permission_denied(request):
-    response = render_to_response(
+    return render_to_response(
         'errors/403.html',
+        status=403
     )
-    response.status_code = 403
-    return response
 
 # handler404
 def page_not_found(request):
-    response = render_to_response(
+    return render_to_response(
         'errors/404.html',
+        status=404
     )
-    response.status_code = 404
-    return response
 
 # handler500
 def server_error(request):
-    response = render_to_response(
+    return render_to_response(
         'errors/500.html',
+        status=500
     )
-    response.status_code = 500
-    return response
+
