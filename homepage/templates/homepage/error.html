@@ -1,13 +1,10 @@
 {% load static from staticfiles %}
-{% macro error %}
-    {% block error %}{% endblock %}
-{% endmacro %}
 
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>{% usemacro error %}</title>
+        <title>{{ error }}</title>
         <link href="{% static 'homepage/css/reset.css' %}" rel="stylesheet" type="text/css">
         <link href="{% static 'error/css/error.css' %}" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Montserrat:700,400" rel="stylesheet" type="text/css">
@@ -17,9 +14,9 @@
     <body>
         <main>
             <div class="container">
-                <h1>{% usemacro error %}</h1>
-                <h2>{% block errorname %}{% endblock %}</h2>
-                <p>{% block errordesc %}{% endblock %}</p>
+                <h1>{{ error }}</h1>
+                <h2>{{ errorname }}</h2>
+                <p>{{ errordesc }}</p>
                 <p><a href="javascript:history.back()">Retornar à página anterior</a></p>
             </div>
         </main>
