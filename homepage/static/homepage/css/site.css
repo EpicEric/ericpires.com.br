@@ -1,0 +1,97 @@
+h1,
+h2, 
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+body {
+    font-family: "Arimo", sans-serif;
+    background-color: #FCF8FA;
+    color: #020603;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+main {
+    float: left;
+}
+
+a {
+    color: #1232E8;
+}
+
+p {
+    margin: 10px;
+}
+
+.titulo-principal {
+    font-size: 50px;
+    background-color: #3796E0;
+    color: #F0F7FE;
+    border-bottom: 15px solid #28252C;
+    text-align: center;
+    padding: 15px;
+}
+
+.container {
+    margin: 15px;
+}
+
+.barra-navegacao {
+    text-align: center;
+    font-size: 19px;
+    color: #B6B5B9;
+    background-color: #2180D4;
+    padding: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    float: right;
+    border-left: 15px solid #28252C;
+    border-bottom: 15px solid #28252C;
+    clear: right;
+    box-sizing: border-box;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.barra-navegacao h1 {
+    font-size: 22px;
+    color: #F0F7FE;
+    margin-bottom: 12px;
+}
+
+.barra-navegacao a {
+    color: #EBF2EE;
+}
+
+.barra-navegacao li {
+    margin: 4px;
+}
+
+.rodape {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #D2E5ED;
+    color: #200804;
+    clear: both;
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.lista-conteudo {
+    margin: 10px;
+    list-style: inside;
+}
+
+.lista-conteudo li {
+    margin: 6px;
+}
