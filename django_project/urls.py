@@ -1,5 +1,4 @@
 from django.conf.urls import patterns, include, url
-from homepage import urls as homepageurls
 from django.contrib import admin
 admin.autodiscover()
 
@@ -9,5 +8,5 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^', include(homepageurls)),
+    url(r'^', include('homepage.urls')),
 )

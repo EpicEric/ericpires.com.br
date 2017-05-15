@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Erro 400</title>
+        <link href="reset.css" rel="stylesheet" type="text/css">
+        <link href="erro.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:700,400" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+		<link href="favicon.png" rel="icon">
+        <?php include_once("analyticstracking.php") ?>
+    </head>
+    <body>
+		<main>
+	    	<div class="container">
+	    	    <h1>Erro 400</h1>
+                <h2>Pedido inválido</h2>
+	    		<p>O servidor não pode processar o seu pedido devido a sintaxe incorreta.</p>
+				<p><a href="javascript:history.back()">Retornar à página anterior</a></p>
+            </div>
+		</main>
+    </body>
+</html>
