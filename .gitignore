@@ -18,3 +18,4 @@ build/
 tests/report/
 
 /static/
+.well-known/
