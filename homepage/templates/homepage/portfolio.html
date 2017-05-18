@@ -1,0 +1,14 @@
+{% extends 'homepage/base.html' %}
+
+{% block 'title' %}
+Portfólio - Eric Rodrigues Pires
+{% endblock %}
+
+{% block 'main' %}
+<div class="container">
+    <ul class="lista-conteudo">
+        <li><a href="{% url 'linkedin' %}">LinkedIn</a></li>
+        <li><a href="{% url 'github' %}">GitHub</a></li>
+    </ul>
+</div>
+{% endblock %}

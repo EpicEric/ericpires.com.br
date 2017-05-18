@@ -1,0 +1,41 @@
+h1,
+h2, 
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+body {
+    font-family: "Arimo", sans-serif;
+    background-color: #3796E0;
+    color: #F0F7FE;
+	text-align: center;
+}
+
+h1 {
+    font-size: 90px;
+    text-align: center;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin: 15px;
+}
+
+a {
+    color: #060509;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
