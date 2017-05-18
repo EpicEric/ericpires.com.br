@@ -19,3 +19,4 @@ tests/report/
 
 /static/
 .well-known/
+/main/password.py
