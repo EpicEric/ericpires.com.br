@@ -1,0 +1,3 @@
+[submodule "django-telegram-bot"]
+	path = django-telegram-bot
+	url = ./django-telegram-bot/
