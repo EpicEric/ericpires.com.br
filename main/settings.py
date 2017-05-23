@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'telegrambot',
     'rest_framework',
     'django.contrib.sites',
+    'codecompilerbot',
 
     'homepage',
 ]
@@ -133,4 +134,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
+TELEGRAM_BOT_HANDLERS_CONF = "codecompilerbot.handlers"
 SITE_ID = 2
