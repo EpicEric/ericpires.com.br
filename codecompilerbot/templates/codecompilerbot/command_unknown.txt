@@ -1,3 +1,3 @@
-Unknown command /todo.
+Unknown command{{ command }}.
 
 Please try /help for a list of commands.
