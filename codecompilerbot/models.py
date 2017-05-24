@@ -6,9 +6,15 @@ class Language(models.Model):
     name = models.CharField(
         max_length=64,
     )
-    codename = models.CharField(
+    shortname = models.CharField(
         max_length=64,
     )
+    value = models.PositiveIntegerField(
+        unique=True,
+    )
+
+    def __str__(self):
+        return self.name
 
 class Code(models.Model):
     chat = models.OneToOneField(
@@ -21,3 +27,6 @@ class Code(models.Model):
     )
     code = models.TextField(blank=True)
     stdin = models.TextField(blank=True)
+
+    def __str__(self):
+        return self.chat.__str__()
