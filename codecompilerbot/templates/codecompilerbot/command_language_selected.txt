@@ -1,1 +1,1 @@
-Language selected. sqn
+{% if current_language %}{% if code %}Language changed to *{{ current_language.name }}*.{% else %}Could not change the selected language. Please try again later.{% endif %}{% else %}Invalid language. Select a valid language with /language.{% endif %}

@@ -55,17 +55,22 @@ class LanguageDetailCommandView(TemplateCommandView):
         except ObjectDoesNotExist:
             context['current_language'] = None
             return context
-        code_set = Code.objects.filter(chat__id=chat_id)
-        if code_set.filter(language__id=language.id).exists():
-            code_text = code_set[0].code
-            code_stdin = code_set[0].stdin
-        else:
-            code_text = ''
-            code_stdin = ''
-        code = Code.objects.update_or_create(
-            chat__id=chat_id,
-            defaults={'chat': Chat.objects.get(id=chat_id), 'language': language, 'code': code_text, 'stdin': code_stdin},
-        )
+        try:
+            code_set = Code.objects.filter(chat__id=chat_id).filter(language__id=language.id)
+            if code_set.exists():
+                code_text = code_set[0].code
+                code_stdin = code_set[0].stdin
+            else:
+                code_text = ''
+                code_stdin = ''
+            code, created = Code.objects.update_or_create(
+                chat__id=chat_id,
+                defaults={'chat': Chat.objects.get(id=chat_id), 'language': language, 'code': code_text, 'stdin': code_stdin},
+            )
+            context['code'] = code
+        except Exception:
+            context['code'] = None
+        return context
 
 class LanguageCommandView(ListDetailCommandView):
     list_view_class = LanguageListCommandView

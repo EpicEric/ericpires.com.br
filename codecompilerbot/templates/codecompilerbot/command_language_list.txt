@@ -1,6 +1,3 @@
-{% if current_language %}The current language is {{ current_language.name }}.
-{% else %}You didn't select a language yet.
-{% endif %}
-Select a language from the list:
+{% if current_language %}The current language is *{{ current_language.name }}*.{% else %}You didn't select a language yet.{% endif %} Select a language from the list:
 {% for language in languages %}
-{{ language.shortname }}: {{ language.name }}{% endfor %}
+- *{{ language.name }}*: {{ language.shortname }}{% endfor %}
