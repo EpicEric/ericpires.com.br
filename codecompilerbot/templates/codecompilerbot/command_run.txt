@@ -1,0 +1,7 @@
+{% autoescape off %}{% if code %}{% if has_code %}{% if connection_error %}Connection Error. Please try again later. Information about your error:
+`
+{{ connection_error }}`{% else %}{% if errors %}Run was unsuccessful. Error:
+`
+{{ errors }}`{% else %}Run was successful. Output:
+`
+{{ output }}`{% endif %}{% endif %}{% else %}Please write code with /code before running this command.{% endif %}{% else %}You haven't selected a programming language yet! Please use /language to choose one.{% endif %}{% endautoescape %}

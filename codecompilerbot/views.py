@@ -1,4 +1,5 @@
 import re
+import requests
 from django.core.exceptions import ObjectDoesNotExist
 from telegrambot.models import Chat
 from telegrambot.bot_views.generic import TemplateCommandView, ListDetailCommandView, \
@@ -44,7 +45,7 @@ class LanguageDetailCommandView(TemplateCommandView):
 
     def __init__(self, language):
         super(LanguageDetailCommandView, self).__init__()
-        self.language = language
+        self.language = language.lower()
 
     def get_context(self, bot, update, **kwargs):
         context = {}
@@ -75,4 +76,74 @@ class LanguageDetailCommandView(TemplateCommandView):
 class LanguageCommandView(ListDetailCommandView):
     list_view_class = LanguageListCommandView
     detail_view_class = LanguageDetailCommandView
+
+
+class CodeCommandView(TemplateCommandView):
+    template_text = "codecompilerbot/command_code.txt"
+
+    def get_context(self, bot, update, **kwargs):
+        context = {}
+        chat_id = update.message.chat.id
+        try:
+            code = Code.objects.get(chat__id=chat_id)
+            if len(update.message.text) > 6:
+                code.code = update.message.text[6:]
+                code.save()
+                context['new_code'] = True
+            context['has_code'] = len(code.code) > 0
+            context['code'] = code
+        except ObjectDoesNotExist:
+            context['code'] = None
+        return context
+
+class InputCommandView(TemplateCommandView):
+    template_text = "codecompilerbot/command_input.txt"
+
+    def get_context(self, bot, update, **kwargs):
+        context = {}
+        chat_id = update.message.chat.id
+        try:
+            code = Code.objects.get(chat__id=chat_id)
+            if len(update.message.text) > 7:
+                code.stdin = update.message.text[7:]
+                code.save()
+                context['new_input'] = True
+            context['has_input'] = len(code.stdin) > 0
+            context['code'] = code
+        except ObjectDoesNotExist:
+            context['code'] = None
+        return context
+
+
+class RunCommandView(TemplateCommandView):
+    template_text = "codecompilerbot/command_run.txt"
+
+    def get_context(self, bot, update, **kwargs):
+        context = {}
+        chat_id = update.message.chat.id
+        try:
+            code = Code.objects.get(chat__id=chat_id)
+            context['code'] = code
+            if len(code.code) > 0:
+                context['has_code'] = True
+                context['has_input'] = len(code.stdin) > 0
+                
+                try:
+                    payload = {
+                        'language': code.language.value,
+                        'code': code.code,
+                        'stdin': code.stdin if context['has_input'] else '',
+                    }
+                    url = "https://compile-public-low.remoteinterview.io/compile"
+                    request = requests.post(url, data=payload)
+                    response = request.json()
+                    context['errors'] = response['errors']
+                    context['output'] = response['output']
+                    context['time'] = response['time']
+                except (ConnectionError, HTTPError, requests.exceptions.RequestException) as e:
+                    context['connection_error'] = e
+ 
+        except ObjectDoesNotExist:
+            context['code'] = None
+        return context
 
