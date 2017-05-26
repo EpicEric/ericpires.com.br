@@ -150,3 +150,15 @@ class RunCommandView(TemplateCommandView):
             context['code'] = None
         return context
 
+class ResetCommandView(TemplateCommandView):
+    template_text = "codecompilerbot/command_reset.txt"
+
+    def get_context(self, bot, update, **kwargs):
+        context = {}
+        confirm_reset = re.match('^/reset\s+yes', update.message.text)
+        context['confirm_reset'] = confirm_reset
+        if confirm_reset:
+            chat_id = update.message.chat.id
+            code = Code.objects.filter(chat__id=chat_id)
+            code.delete()
+        return context

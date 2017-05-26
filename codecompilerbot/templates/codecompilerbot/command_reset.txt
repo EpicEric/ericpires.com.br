@@ -1,0 +1,3 @@
+{% if confirm_reset %}Data reset.{% else %}_WARNING_: Resetting will delete all code data stored on the server permanently.
+
+If you wish to proceed anyway, please type "/reset yes".{% endif %}
