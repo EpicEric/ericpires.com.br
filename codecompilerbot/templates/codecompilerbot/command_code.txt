@@ -1,4 +1,4 @@
 {% if code %}{% if new_code %}New code added successfully.{% else %}{% if has_code %}Current code:
 
 ```
-{{ code.code|safe }}```{% else %}No code added yet.{% endif %}{% endif %}{% else %}You haven't selected a programming language yet! Please use /language to choose one.{% endif %}
+{{ code.code|safe }}```{% else %}No code added yet.{% endif %}{% endif %}{% else %}{% include "codecompilerbot/template_no_language.txt" %}{% endif %}

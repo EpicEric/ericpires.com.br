@@ -4,4 +4,4 @@
 `
 {{ errors|escape_markdown }}`{% else %}{% if output %}Run was successful. Output:
 `
-{{ output|escape_markdown }}`{% else %}_WARNING_: No output received. Try printing your results.{% endif %}{% endif %}{% endif %}{% else %}Please write code with /code before running this command.{% endif %}{% else %}You haven't selected a programming language yet! Please use /language to choose one.{% endif %}{% endautoescape %}
+{{ output|escape_markdown }}`{% else %}_WARNING_: No output received. Try printing your results.{% endif %}{% endif %}{% endif %}{% else %}Please write code with /code before running this command.{% endif %}{% else %}{% include "codecompilerbot/template_no_language.txt" %}{% endif %}{% endautoescape %}

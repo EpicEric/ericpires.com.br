@@ -1,4 +1,4 @@
 {% if code %}{% if new_input %}New input added successfully.{% else %}{% if has_input %}Current input:
 
 ```
-{{ code.stdin|safe }}```{% else %}No input added yet.{% endif %}{% endif %}{% else %}You haven't selected a programming language yet! Please use /language to choose one.{% endif %}
+{{ code.stdin|safe }}```{% else %}No input added yet.{% endif %}{% endif %}{% else %}{% include "codecompilerbot/template_no_language.txt" %}{% endif %}
