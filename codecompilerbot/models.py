@@ -12,6 +12,7 @@ class Language(models.Model):
     value = models.PositiveIntegerField(
         unique=True,
     )
+    default_code = models.TextField(blank=True)
 
     def __str__(self):
         return self.name

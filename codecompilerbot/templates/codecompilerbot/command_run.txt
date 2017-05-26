@@ -1,7 +1,7 @@
-{% autoescape off %}{% if code %}{% if has_code %}{% if connection_error %}Connection Error. Please try again later. Information about your error:
+{% load telegrambot_filters %}{% autoescape off %}{% if code %}{% if has_code %}{% if connection_error %}Connection Error. Please try again later. Advanced information about your error:
 `
-{{ connection_error }}`{% else %}{% if errors %}Run was unsuccessful. Error:
+{{ connection_error|escape_markdown }}`{% else %}{% if errors %}Run was unsuccessful. Error:
 `
-{{ errors }}`{% else %}Run was successful. Output:
+{{ errors|escape_markdown }}`{% else %}{% if output %}Run was successful. Output:
 `
-{{ output }}`{% endif %}{% endif %}{% else %}Please write code with /code before running this command.{% endif %}{% else %}You haven't selected a programming language yet! Please use /language to choose one.{% endif %}{% endautoescape %}
+{{ output|escape_markdown }}`{% else %}_WARNING_: No output received. Try printing your results.{% endif %}{% endif %}{% endif %}{% else %}Please write code with /code before running this command.{% endif %}{% else %}You haven't selected a programming language yet! Please use /language to choose one.{% endif %}{% endautoescape %}

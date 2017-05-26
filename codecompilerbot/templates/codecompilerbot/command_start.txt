@@ -1,3 +1,5 @@
 Welcome to the CodeCompilerBot.
 
-You may use /help for a list of commands.
+{% if current_language %}Your selected language is *{{ current_language.name }}*. Use /code to view your current code.{% else %}You haven't selected a programming language yet. Use /language to get started.{% endif %}
+
+{% include "codecompilerbot/command_help.txt" %}

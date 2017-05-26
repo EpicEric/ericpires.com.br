@@ -1,1 +1,1 @@
-{% load telegrambot_filters %}{% autoescape off %}{{ languages |keyboard_field:"command=language&field=shortname&per_line=1"}}{% endautoescape %}
+{% load telegrambot_filters %}{% autoescape off %}{{ languages |keyboard_field:"command=language&field=shortname&text=name&per_line=1"}}{% endautoescape %}

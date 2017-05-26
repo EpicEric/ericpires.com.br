@@ -10,6 +10,9 @@ from .models import Language, Code
 class StartCommandView(TemplateCommandView):
     template_text = "codecompilerbot/command_start.txt"
 
+class HelpCommandView(TemplateCommandView):
+    template_text = "codecompilerbot/command_help.txt"
+
 class UnknownCommandView(TemplateCommandView):
     template_text = "codecompilerbot/command_unknown.txt"
     
@@ -62,7 +65,7 @@ class LanguageDetailCommandView(TemplateCommandView):
                 code_text = code_set[0].code
                 code_stdin = code_set[0].stdin
             else:
-                code_text = ''
+                code_text = language.default_code or ''
                 code_stdin = ''
             code, created = Code.objects.update_or_create(
                 chat__id=chat_id,
