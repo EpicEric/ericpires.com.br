@@ -1,1 +1,1 @@
-/run - todo
+/run - Starts a sandboxed environment on which to run the code from /code with the programming language chosen with /language. Optionally, it will use /input as stdin. If either a language or code is missing, the user will be prompted. Returns a traceback on error or an output on success, which will be displayed to the user accordingly. Sandbox environments are destroyed after execution.

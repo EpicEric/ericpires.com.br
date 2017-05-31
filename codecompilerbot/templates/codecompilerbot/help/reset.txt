@@ -1,3 +1,3 @@
-/reset - todo
+/reset - Prompts the user to reset all stored data regarding language, code, and input. Does not do any action on the database without the "yes" parameter.
 
-/reset yes - todo
+/reset yes - Confirms and deletes all chat-related data.

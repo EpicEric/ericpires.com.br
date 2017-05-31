@@ -1,5 +1,5 @@
-/code - todo
+/code - Displays the current code for this session, if any. If no language has been selected yet, it will prompt you to choose one first.
 
-/code default - todo
+/code default - Replaces the current code with a default "Hello World" program for the appropriate language.
 
-/code <code> - todo
+/code <code> - Replaces the current code with the text in <code>. For indentation-enforced languages, use spaces (sorry :<). Markdown such as monospace font does not affect code and will be ignored.
