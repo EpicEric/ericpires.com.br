@@ -65,7 +65,7 @@ class LanguageDetailCommandView(TemplateCommandView):
                 code_text = code_set[0].code
                 code_stdin = code_set[0].stdin
             else:
-                code_text = language.default_code or ''
+                code_text = ''
                 code_stdin = ''
             code, created = Code.objects.update_or_create(
                 chat__id=chat_id,
@@ -90,8 +90,11 @@ class CodeCommandView(TemplateCommandView):
         try:
             code = Code.objects.get(chat__id=chat_id)
             if len(update.message.text) > 6:
-                code.code = update.message.text[6:]
+                text_code = update.message.text[6:]
+                default_code = bool(re.match('^\s*default', text_code))
+                code.code = code.language.default_code if default_code else text_code
                 code.save()
+                context['default_code'] = default_code
                 context['new_code'] = True
             context['has_code'] = len(code.code) > 0
             context['code'] = code

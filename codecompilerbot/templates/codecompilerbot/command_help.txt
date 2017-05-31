@@ -7,4 +7,4 @@
 *Other commands*
 /start - Display the start message.
 /reset - Clear all data.
-/help - List all commands.
+/help - List all commands or get help for a specific one.
