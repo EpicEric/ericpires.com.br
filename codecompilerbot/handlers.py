@@ -1,7 +1,7 @@
 from telegrambot.handlers import command, unknown_command, regex, message
 from codecompilerbot.views import StartCommandView, UnknownCommandView, \
     LanguageCommandView, CodeCommandView, InputCommandView, RunCommandView, \
-    HelpCommandView, ResetCommandView
+    HelpCommandView, ResetCommandView, AboutCommandView
 
 urlpatterns = [
     command('start', StartCommandView.as_command_view()),
@@ -11,6 +11,7 @@ urlpatterns = [
     command('run', RunCommandView.as_command_view()),
     command('help', HelpCommandView.as_command_view()),
     command('reset', ResetCommandView.as_command_view()),
+    command('about', AboutCommandView.as_command_view()),
     message(UnknownCommandView.as_command_view()),
 ]
 

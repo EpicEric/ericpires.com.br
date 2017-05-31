@@ -35,6 +35,11 @@ class UnknownCommandView(TemplateCommandView):
         context['command'] = unknown_command.lower()
         return context
 
+# /about: Technical information on the bot
+class AboutCommandView(TemplateCommandView):
+    template_text = "codecompilerbot/command_about.txt"
+    disable_web_page_preview = True
+
 # /help: Show list of commands or detailed help on a specific one
 class HelpCommandView(TemplateCommandView):
     template_text = "codecompilerbot/command_help.txt"
@@ -52,6 +57,7 @@ class HelpCommandView(TemplateCommandView):
                 'code': render_to_string('codecompilerbot/help/code.txt'),
                 'input': render_to_string('codecompilerbot/help/input.txt'),
                 'run': render_to_string('codecompilerbot/help/run.txt'),
+                'about': render_to_string('codecompilerbot/help/about.txt'),
             }
             known_command = command in help_dict
             if known_command:

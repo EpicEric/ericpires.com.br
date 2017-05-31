@@ -9,4 +9,5 @@ Use /help <command> for more information on a command.
 *Other commands*
 /start - Display the start message.
 /reset - Clear all data.
+/about - Technical information about this bot.
 /help - List all commands or get help for a specific one.

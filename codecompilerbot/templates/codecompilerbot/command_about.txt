@@ -1,0 +1,9 @@
+*CodeCompilerBot* v0.1
+
+First release 2017-05-31, last updated 2017-05-31
+
+This bot was written in Python on Django with a fork of jlmadurga's [django-telegram-bot](https://github.com/EpicEric/django-telegram-bot) repo.
+
+All code execution runs on a Node-based Docker sandbox environment from remoteinterview's [compilebox](https://github.com/remoteinterview/compilebox).
+
+Please contact @ericpires9 on Telegram or [@EpicEric](https://github.com/EpicEric) on GitHub for more information.
