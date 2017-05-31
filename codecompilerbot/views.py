@@ -42,7 +42,7 @@ class HelpCommandView(TemplateCommandView):
     def get_context(self, bot, update, **kwargs):
         context = {}
         try:
-            command = re.search('^\s*(\w+).*', update.message.text[6:]).group(1)
+            command = re.search('^\s*/?(\w+).*', update.message.text[6:]).group(1)
             context['command'] = '/{}'.format(command.lower())
             help_dict = {
                 'help': render_to_string('codecompilerbot/help/help.txt'), 
