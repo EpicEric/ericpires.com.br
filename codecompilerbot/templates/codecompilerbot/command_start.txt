@@ -1,5 +1,7 @@
-Welcome to the CodeCompilerBot.
+Welcome to the CodeCompilerBot.{% if current_language %} Your current language is *{{ current_language.name }}*.
 
-{% if current_language %}Your selected language is *{{ current_language.name }}*. Use /code to view your current code.{% else %}You haven't selected a programming language yet. Use /language to get started.{% endif %}
+To view your current code, use /code.{% else %}
 
-{% include "codecompilerbot/command_help.txt" %}
+You haven't selected a programming language yet. Use /language to get started.{% endif %}
+
+{% include "codecompilerbot/template_help_list.txt" %}

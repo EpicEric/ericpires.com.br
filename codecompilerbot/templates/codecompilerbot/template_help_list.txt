@@ -1,0 +1,12 @@
+Use /help <command> for more information on a command.
+
+*Basic commands*
+/language - Select a programming language.
+/code - Send code to run.
+/input - Send input parameters to your program (stdin).
+/run - Execute your code with input.
+
+*Other commands*
+/start - Display the start message.
+/reset - Clear all data.
+/help - List all commands or get help for a specific one.

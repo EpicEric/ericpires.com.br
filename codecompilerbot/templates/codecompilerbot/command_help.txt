@@ -1,10 +1,1 @@
-*Basic commands*
-/language - Select a programming language.
-/code - Send code to run.
-/input - Send input parameters to your program (stdin).
-/run - Execute your code with input.
-
-*Other commands*
-/start - Display the start message.
-/reset - Clear all data.
-/help - List all commands or get help for a specific one.
+{% if command %}{% if command_desc %}{{ command_desc }}{% else %}{% include "codecompilerbot/command_unknown.txt" %}{% endif %}{% else %}{% include "codecompilerbot/template_help_list.txt" %}{% endif %}
