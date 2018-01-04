@@ -1,0 +1,76 @@
+==================================================================
+https://keybase.io/epiceric
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ericpires.com.br
+  * I am epiceric (https://keybase.io/epiceric) on keybase.
+  * I have a public key with fingerprint 1021 88E4 6032 51FB 78CE  66F6 F123 34B2 3C35 6EDF
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120411bcd84b94bd77b741c58e8a60ba3938de8ad21af1dffbbde3539aed05c2fe60a",
+      "fingerprint": "102188e4603251fb78ce66f6f12334b23c356edf",
+      "host": "keybase.io",
+      "key_id": "f12334b23c356edf",
+      "kid": "0101d7db4928a489691dc222c6388a866ec94203930d422c287ca4247186cedd54020a",
+      "uid": "31af4aaab236f5cad9d9c4786fa83519",
+      "username": "epiceric"
+    },
+    "service": {
+      "hostname": "ericpires.com.br",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1515088143,
+  "expire_in": 157680000,
+  "prev": "3591f91256dcd67e938845790b9c2473b521dbe067a7149e3ef6493609885605",
+  "seqno": 28,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMNyAnicbVJ7UBVVGL8841FcKI1mFIIVHKYuuGcfZ3evMExkaViAYQ6Fed3dcxY2
+YO/lPngMcx0IkRgJCx+NY5FUokhqc7OCqEkMjYdDoxihMzxmKCCCGgqrsQnbZeK/
+zj/nfN/5/X7f7/vO6X0gwBTmt7iB8aWy2oTfYM/bHtNLWaq5ipDsqJKwVhFFeGXD
+xQi73LYiFRFWggQUyQAgyYhnJIGREMdJHANklse8CElJpAWaR/oZUUBUAFIUSUKY
+ZmlBxIhkZUrBkBQJC6GoWgF2Opyq5tZlAUkBnscMJGmKBYrE8TKGUIEKoGiakSha
+plmIkaITC+0ug6Gbk0QXTlHtek4PbCv2/ge/6psEiEMSI1C8yPACFACSKYqSIc3z
+Ig8hlgWGInX3JGL0NMVzsshQDAd4KGOEWIakVnx7VuRovTlGFEW9ElRYWUQCEmSG
+46Ei8jQLBAPowk5NLME6GjtUGTtVmfBaCD1bpkfGYI1OVhH6rUN1YleKbC9JkZw6
+3+G0u+2yvVi/LXS7HS6rwXZXOgx4OZZs/wnZJFVD+ix1Rhl2ulS7RliBjpTdqqEM
+WMCSPA8Y2kLgCqOETTUQLAd5Ul9GHVxmdMQKQBEAxUIkI8hh/Rl5huUEUhJkfQy0
+xFIASZiEnMgBRsA0ViAj0JAUeJ6FJEsYrZVqdsJK8bpPsUDXdKkFmuj2ODHhvdyz
+O9DkF2YKDvI3PpkpLDRy9evVTJvvlYcfZpuzuyrZ7TGj8dfG4nodn08mVCffSGrf
+v3sdU9awMHTaqQ68cN+ugITjPxSGeauQg9sc4d/emVP8Zl672dfSNj97IXen5Wrt
+dlv9qLK3UdsWC2O2PAjOvmFtzjJd725+a3yt4o5NJMO3bJudHE9IfX9TWvdWf0vX
+L7GZwaJvqWJkKrc1p/6ryvajpR/PiKa4Jxo6kpejPac+q5g+93xhm3j59kRVzncb
+f24aCxuIzF+eCo/OyNs03DgT09qTaFu/zrxhuie/xfZTeUbCbN95X1bpSL8txBsT
+d+t6vPbc+PG4ybh9QndV442I7J2FGdl7j7y69fSPnXOBX++viwheTr9d9i7svdPk
+Tc0NfOfYwSkq8HBJ/mJXevgSDGgx1U6kffLFWEiNNzA6ZP7lhfi0oALr1YaPHmee
+yQm6NXnlWGfe3chnPw1mNuZrv+aqFzf3nSGqPR2/y4/+vfDQnkvv1Z4bIls7npSf
+XirAJw9lDgNzFFhTU/fBwYzfGv8YyeiPWuN4+P6gs6E7/nnq/F/Tc9Zkp+9k/52j
+X0pps+k397W+OPTNxQt9sjZYu0z/6ZuwHxrYcSJyVjg1N+wxrz/woVh68/XMK6Gj
+lmZ45kTSPU9bgzfSlpl0Ce5y1ddNLTVVFhdVf+9+JXHwsSPXNJff2IGZu2ujm3Je
+e4RoWsz/VvBE7ZnPYacT/wWeLrXm
+=9GMw
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/epiceric
+
+==================================================================
+
