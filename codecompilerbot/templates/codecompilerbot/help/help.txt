@@ -1,3 +1,0 @@
-/help - Shows a list of all available commands for the CodeCompilerBot.
-
-/help <command> - Displays specific help and available options for a command.

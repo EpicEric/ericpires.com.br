@@ -1,3 +1,0 @@
-Unknown command{% if command %} {{ command }}{% endif %}.
-
-Please try /help for a list of commands.

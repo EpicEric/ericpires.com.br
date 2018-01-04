@@ -1,3 +1,0 @@
-/input - Displays the current input (stdin) for this session, if any. If no language has been selected yet, it will prompt you to choose one first.
-
-/input <input> - Replaces the current input with the text in <input>. The execution sandbox will treat it as stdin, i.e. text input into a terminal.

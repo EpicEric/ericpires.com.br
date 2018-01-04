@@ -1,1 +1,0 @@
-/about - Displays technical information on CodeCompilerBot.

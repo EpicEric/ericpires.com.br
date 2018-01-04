@@ -1,17 +1,17 @@
-from django.shortcuts import render, render_to_response
+from django.shortcuts import render_to_response
 
-def error404(request):
+def error404(request, exception):
     context = {
         'error': 'Erro 404',
         'errorname': 'Recurso não encontrado',
-        'errordesc': 'A página que voce tentou acessar não existe ou foi movida.',
+        'errordesc': 'A página "{}" que você tentou acessar não existe ou foi removida.'.format(request.path),
     }
-    return render_to_response('homepage/error.html', context)
+    return render_to_response('homepage/error.html', context, status=404)
 
 def error500(request):
     context = {
         'error': 'Erro 500',
         'errorname': 'Erro interno de servidor',
-        'errordesc': 'Nao foi possível processar a solicitação. Por favor, entre em contato com o administrador.',
+        'errordesc': 'Não foi possível processar a solicitação. Por favor, entre em contato com o administrador.',
     }
-    return render_to_response('homepage/error.html', context)
+    return render_to_response('homepage/error.html', context, status=500)

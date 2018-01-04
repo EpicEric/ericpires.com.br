@@ -1,7 +1,0 @@
-Welcome to the CodeCompilerBot.{% if current_language %} Your current language is *{{ current_language.name }}*.
-
-To view your current code, use /code.{% else %}
-
-You haven't selected a programming language yet. Use /language to get started.{% endif %}
-
-{% include "codecompilerbot/template_help_list.txt" %}

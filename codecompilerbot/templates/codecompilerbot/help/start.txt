@@ -1,1 +1,0 @@
-/start - Displays general information on the current language for the current chat and a list of available commands.

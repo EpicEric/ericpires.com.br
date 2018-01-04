@@ -1,5 +1,0 @@
-{% if current_language %}_WARNING_: The current language is *{{ current_language.name }}*. Changing languages will erase all of your code. Use /code if you wish to review it.
-
-{% else %}You haven't selected a language yet.{% endif %} Select a language from the list:
-{% for language in languages %}
-- *{{ language.name }}*: {{ language.shortname }}{% endfor %}

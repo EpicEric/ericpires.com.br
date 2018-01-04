@@ -1,1 +1,0 @@
-{% if command %}{% if command_desc %}{{ command_desc }}{% else %}{% include "codecompilerbot/command_unknown.txt" %}{% endif %}{% else %}{% include "codecompilerbot/template_help_list.txt" %}{% endif %}

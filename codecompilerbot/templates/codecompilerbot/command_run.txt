@@ -1,7 +1,0 @@
-{% load telegrambot_filters %}{% autoescape off %}{% if code %}{% if has_code %}{% if connection_error %}Connection Error. Please try again later. Advanced information about your error:
-`
-{{ connection_error|escape_markdown }}`{% else %}{% if errors %}Run was unsuccessful. Error:
-`
-{{ errors|escape_markdown }}`{% else %}{% if output %}Run was successful. Output:
-`
-{{ output|escape_markdown }}`{% else %}_WARNING_: No output received. Try printing your results.{% endif %}{% endif %}{% endif %}{% else %}Please write code with /code before running this command.{% endif %}{% else %}{% include "codecompilerbot/template_no_language.txt" %}{% endif %}{% endautoescape %}

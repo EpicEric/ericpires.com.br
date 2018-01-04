@@ -1,4 +1,0 @@
-{% if code %}{% if new_code %}{% if default_code %}Changed code to default. Use /code to view it.{% else %}New code added successfully.{% endif %}{% else %}{% if has_code %}Current code:
-
-```
-{{ code.code|safe }}```{% else %}No code added yet.{% endif %}{% endif %}{% else %}{% include "codecompilerbot/template_no_language.txt" %}{% endif %}

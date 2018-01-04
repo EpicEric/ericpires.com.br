@@ -1,3 +1,0 @@
-/language - Displays the currently selected language, if any, and a list of all available languages on a keyboard.
-
-/language <choice> - Can be run either manually or by using the keyboard from the command above. If the language in <choice> differs from the current option, your selection will be replaced, and all saved code and input will be deleted.
