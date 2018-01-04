@@ -21,8 +21,6 @@ handler500 = 'homepage.error.error500'
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-
-    url(r'^telegrambot/', include('telegrambot.urls', namespace="telegrambot")),
-
+    # url(r'^telegrambot/', include('telegrambot.urls', namespace="telegrambot")),
     url(r'^', include('homepage.urls')),
 ]
