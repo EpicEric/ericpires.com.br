@@ -6,7 +6,7 @@ I hereby claim:
 
   * I am an admin of https://ericpires.com.br
   * I am epiceric (https://keybase.io/epiceric) on keybase.
-  * I have a public key with fingerprint 1021 88E4 6032 51FB 78CE  66F6 F123 34B2 3C35 6EDF
+  * I have a public key with fingerprint F35F 27B6 3C07 70FC 0E2F  A53C D5CE 4701 C0AE EFB7
 
 To do so, I am signing this object:
 
@@ -14,10 +14,10 @@ To do so, I am signing this object:
   "body": {
     "key": {
       "eldest_kid": "0120411bcd84b94bd77b741c58e8a60ba3938de8ad21af1dffbbde3539aed05c2fe60a",
-      "fingerprint": "102188e4603251fb78ce66f6f12334b23c356edf",
+      "fingerprint": "f35f27b63c0770fc0e2fa53cd5ce4701c0aeefb7",
       "host": "keybase.io",
-      "key_id": "f12334b23c356edf",
-      "kid": "0101d7db4928a489691dc222c6388a866ec94203930d422c287ca4247186cedd54020a",
+      "key_id": "d5ce4701c0aeefb7",
+      "kid": "0101f350b614ca1e7ff4bf60d7f8bfe874f8c3b8fbefd365cfd41d94438e5e1410050a",
       "uid": "31af4aaab236f5cad9d9c4786fa83519",
       "username": "epiceric"
     },
@@ -28,10 +28,10 @@ To do so, I am signing this object:
     "type": "web_service_binding",
     "version": 1
   },
-  "ctime": 1515088143,
+  "ctime": 1515252295,
   "expire_in": 157680000,
-  "prev": "3591f91256dcd67e938845790b9c2473b521dbe067a7149e3ef6493609885605",
-  "seqno": 28,
+  "prev": "aa29af976f740d485cb594a159d9e7dee68698a85dc125e301d63834df171ed4",
+  "seqno": 35,
   "tag": "signature"
 }
 
@@ -41,30 +41,30 @@ which yields the signature:
 Version: Keybase OpenPGP v2.0.76
 Comment: https://keybase.io/crypto
 
-yMNyAnicbVJ7UBVVGL8841FcKI1mFIIVHKYuuGcfZ3evMExkaViAYQ6Fed3dcxY2
-YO/lPngMcx0IkRgJCx+NY5FUokhqc7OCqEkMjYdDoxihMzxmKCCCGgqrsQnbZeK/
-zj/nfN/5/X7f7/vO6X0gwBTmt7iB8aWy2oTfYM/bHtNLWaq5ipDsqJKwVhFFeGXD
-xQi73LYiFRFWggQUyQAgyYhnJIGREMdJHANklse8CElJpAWaR/oZUUBUAFIUSUKY
-ZmlBxIhkZUrBkBQJC6GoWgF2Opyq5tZlAUkBnscMJGmKBYrE8TKGUIEKoGiakSha
-plmIkaITC+0ug6Gbk0QXTlHtek4PbCv2/ge/6psEiEMSI1C8yPACFACSKYqSIc3z
-Ig8hlgWGInX3JGL0NMVzsshQDAd4KGOEWIakVnx7VuRovTlGFEW9ElRYWUQCEmSG
-46Ei8jQLBAPowk5NLME6GjtUGTtVmfBaCD1bpkfGYI1OVhH6rUN1YleKbC9JkZw6
-3+G0u+2yvVi/LXS7HS6rwXZXOgx4OZZs/wnZJFVD+ix1Rhl2ulS7RliBjpTdqqEM
-WMCSPA8Y2kLgCqOETTUQLAd5Ul9GHVxmdMQKQBEAxUIkI8hh/Rl5huUEUhJkfQy0
-xFIASZiEnMgBRsA0ViAj0JAUeJ6FJEsYrZVqdsJK8bpPsUDXdKkFmuj2ODHhvdyz
-O9DkF2YKDvI3PpkpLDRy9evVTJvvlYcfZpuzuyrZ7TGj8dfG4nodn08mVCffSGrf
-v3sdU9awMHTaqQ68cN+ugITjPxSGeauQg9sc4d/emVP8Zl672dfSNj97IXen5Wrt
-dlv9qLK3UdsWC2O2PAjOvmFtzjJd725+a3yt4o5NJMO3bJudHE9IfX9TWvdWf0vX
-L7GZwaJvqWJkKrc1p/6ryvajpR/PiKa4Jxo6kpejPac+q5g+93xhm3j59kRVzncb
-f24aCxuIzF+eCo/OyNs03DgT09qTaFu/zrxhuie/xfZTeUbCbN95X1bpSL8txBsT
-d+t6vPbc+PG4ybh9QndV442I7J2FGdl7j7y69fSPnXOBX++viwheTr9d9i7svdPk
-Tc0NfOfYwSkq8HBJ/mJXevgSDGgx1U6kffLFWEiNNzA6ZP7lhfi0oALr1YaPHmee
-yQm6NXnlWGfe3chnPw1mNuZrv+aqFzf3nSGqPR2/y4/+vfDQnkvv1Z4bIls7npSf
-XirAJw9lDgNzFFhTU/fBwYzfGv8YyeiPWuN4+P6gs6E7/nnq/F/Tc9Zkp+9k/52j
-X0pps+k397W+OPTNxQt9sjZYu0z/6ZuwHxrYcSJyVjg1N+wxrz/woVh68/XMK6Gj
-lmZ45kTSPU9bgzfSlpl0Ce5y1ddNLTVVFhdVf+9+JXHwsSPXNJff2IGZu2ujm3Je
-e4RoWsz/VvBE7ZnPYacT/wWeLrXm
-=9GMw
+yMN0AnicbVJ7UFRVGN9FEKMJN1GhicK5IsGGdN+PzSnHjaGpHNgYGYMdlnvvOQdv
+K7vL3V1gMwZhekGmwkivISrDgEgCkWlQNDDpAYgoYtHAaIqpNISKtRlG3cvEf51/
+zvm+7/f4vjPfyfuWGCKMo0Npxp7WmS+NA711fkN2xlTaDkxygwBm2YE54cIFtwPo
+9TmcCsAsGE6QOE0Qkgx4WhJoCXCcxNGEzPCQF1lcEimB4oH2BiQhIgIgJEkAUgwl
+iBDgjEwiyOIilowhxZUPVY+quHyaLKIYRHISS8k4x+FIxiGJRIaSASNDmsMJGRch
+RBKnEbe5vTpDa04SvTBFcWs5LXAstPc/+MW+cUIzwSWWoGWRgBxCtIRYHHCIlxDk
+ORrxMiXxSIIIUCwjI0ATQKBpiocMJGgCx5mFvv0LcpQ2HC2KokRSLGJkEQhAkGmO
+Z5HIUwwh6EAvVF1iAdTQ0KPIUFVkrDQZ07JFWqR/rD7JIkKrehQVelNkd0GKpGp8
+j+r2uWX3dq26zefzeC062xfw6PBiKDn+E3JIigtof6kxiqDqVdwuzEJoSNmn6MoE
+QzAkQ5ICk4zBEt3CoegIhmN5XDu6DyzSJEWRFEQkcCziaBzQPCNLjECLBKNNBjkA
+IcuzAi/yDJAJkoEUTgCW4ikaIIIjIKAxfbRClxuzUJqVT8zXNL1Kvkv0+VWIlZ7o
+tYcajBGGpWEh+pIZIu4xLa6e/2eTYc9oyLquvq+Q46zBm1N35PjsvX+LyXt+bQDL
+Nxc8XRz8sCHs856YJ27vbzG3vB0dM7qV8nceevGP3Y9/amtRm9IzTkzkBqyvTrUF
+e77P/sIW1SGMfmYO/P588oivb6TmMjc3pd6ozYq9cCMh9ZMfzUsqJcPwMxvu9pTf
+Pzlo/DauLOs58/i+jNp6pusOHTYV1VLV0X2cKg6ce9N2eciZx5rqiX224Wsv4A9N
+7/puy5mdmTtPV6439ewNs25oddK7mTXGR06WRhmfffd0BXN0pvsCba9+ZaYy0pJe
+U/4LOWvKvfJb9kD9qLPiStugb6h9ekBoUG8+eCc6KWHlwcS8yNSSxj+3BKjmb6r7
+yqwZr1VtvHpgRV7XsvceTa+4PT/3V3HWpfEacW14Z9LDTdyp6olj1tBZ6+Rc0apz
+ZOZw/wehYe8/+dbZxKRbJSPLoxPescZZW5sn6trD4yYrV9f+NP9UTPjh3OHg5lMV
+TfCSZSzR7CquuvZy53zk3HhwfVfZATInflnHKkvjutfz7Qc7U4uu9m/dVNiVe8gr
+dJpyazLtH8cerVpzpFZJP58dbw6nsQdW1jXXbxq7uz+Y3Lr2Mfv1pcoPx0y9rZa0
+whUTxvK9/vmbcdnXuy+GutPiYyOac5xt03mDs4dtL71x6+v+ydUTY//YQ86vGfoo
+4Uxg43RpVP/FxjhbVrvfawv+Cx6Qygk=
+=RHSy
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
@@ -73,4 +73,3 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/epiceric
 
 ==================================================================
-
