@@ -1,0 +1,30 @@
+server {
+    listen 80;
+    listen [::]:80;
+    server_name ericpires.com.br ericpir.es;
+    return 301 https://$host$request_uri;
+}
+
+
+server {
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/ericpires.com.br/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/ericpires.com.br/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+    server_name ericpires.com.br ericpir.es;
+
+    # location = /favicon.ico { access_log off; log_not_found off; }
+    location /keybase.txt {
+        alias /home/ubuntu/django_project/main/keybase.txt;
+    }
+    location /static/ {
+        root /home/ubuntu/django_project;
+    }
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/home/ubuntu/django_project/django_project.sock;
+    }
+}
+

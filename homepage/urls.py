@@ -10,9 +10,6 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),
     path('contato/', RedirectView.as_view(url=reverse_lazy('contact'))),
 
-    # Keybase
-    path('keybase.txt', RedirectView.as_view(url=static('homepage/keybase.txt'))),
-
     # Shorteners
     path('facebook/', RedirectView.as_view(url='https://www.facebook.com/ericpires9'), name='facebook'),
     path('github/', RedirectView.as_view(url='https://github.com/EpicEric'), name='github'),
