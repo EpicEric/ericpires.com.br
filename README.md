@@ -1,5 +1,35 @@
+## Production
 
-## Development environment
+### Updating the current environment
+
+**Important:** Activate the virtualenv prior to any steps:
+
+```sh
+source venv/bin/activate
+```
+
+* After updating static files:
+
+```sh
+python manage.py collectstatic --noinput
+```
+
+* After updating models:
+
+```sh
+python manage.py makemigrations
+python manage.py migrate
+```
+
+**Important:** Once done, restart gunicorn:
+
+```sh
+sudo systemctl restart gunicorn
+```
+
+## Development
+
+### Setting up a new environment
 
 1. Set the following environment variable in `.bashrc` or `.zshrc` and restart your shell session:
 
