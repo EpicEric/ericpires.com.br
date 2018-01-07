@@ -1,12 +1,12 @@
 h1,
 h2, 
 h3 {
-    font-family: "Montserrat", sans-serif;
+    font-family: sans-serif;
     font-weight: bold;
 }
 
 body {
-    font-family: "Arimo", sans-serif;
+    font-family: sans-serif;
     background-color: #FCF8FA;
     color: #020603;
 }
