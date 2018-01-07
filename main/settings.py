@@ -25,9 +25,16 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECRET_KEY = 'your-secret-key-here'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+if os.environ.get('DJANGO_DEVELOPMENT'):
+    DEBUG = True
+else:
+    DEBUG = False
 
-ALLOWED_HOSTS = ['ericpires.com.br', 'ericpir.es', '45.55.230.49', '2604:a880:800:10::174:c001']
+
+if DEBUG:
+    ALLOWED_HOSTS = ['*']
+else:
+    ALLOWED_HOSTS = ['ericpires.com.br', 'ericpir.es', '45.55.230.49', '2604:a880:800:10::174:c001']
 
 
 # Application definition

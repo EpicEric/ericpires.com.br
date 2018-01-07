@@ -5,6 +5,7 @@
 *.egg-info
 *.pot
 *.py[co]
+*.sqlite3
 .tox/
 __pycache__
 MANIFEST
@@ -18,6 +19,6 @@ build/
 tests/report/
 venv/
 
-/static/
+static/
 .well-known/
 /main/password.py
