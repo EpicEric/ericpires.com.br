@@ -1,0 +1,68 @@
+## Basic Configuration
+baseurl = "https://ericpires.com.br/"
+languageCode = "en"
+
+title = "Epic Eric"
+theme = "hyde-hyde"
+
+## Hugo Built-in Features
+# disqusShortname = "your-disqus-shortname"
+# googleAnalytics = "your-google-analytics-id"
+# enableRobotsTXT = true
+
+# summarylength = 30
+
+#paginate = 5
+
+## Site Settings
+[params]
+    author = "Eric Rodrigues Pires"
+    title = "Eric Rodrigues Pires"
+    description = "Eric Rodrigues Pires"
+    authorimage = "/img/eric/logo.png"
+    dateformat = "2006-01-02"
+
+    # sidebar, copyright & license
+    copyright = "Eric Rodrigues Pires"
+    license = "Apache License, Version 2.0"
+    licenseURL = "https://www.apache.org/licenses/LICENSE-2.0"
+    showBuiltWith = true
+
+    # https://highlightjs.org
+    highlightjs = true
+    highlightjsstyle = "github"
+    highlightjslanguages = ["pony"]
+    
+    # please choose either GraphComment or Disqus or Utterances
+    #GraphCommentId = "..."
+    UtterancesRepo = "epiceric/ericpires.com.br" # https://utteranc.es/
+    UtterancesIssueTerm = "pathname" # pathname, url, title, og:title
+    UtterancesTheme = "github-light" # github-light or github-dark
+
+    # Table of contents
+    #toc = none, "hugo", or "tocbot"
+
+## Social Accounts
+[params.social]
+    github = "epiceric"
+    keybase = "epiceric"
+    linkedin = "ericpires"
+    email = "contato@ericpires.com.br"
+    # gravatar = "your-email@example.com"
+
+## Main Menu
+[[menu.main]]
+    name = "Posts"
+    weight = 100
+    identifier = "posts"
+    url = "/posts/"
+# [[menu.main]]
+#     name = "Portfolio"
+#     identifier = "portfolio"
+#     weight = 200
+#     url = "/portfolio/"
+# [[menu.main]]
+#     name = "About"
+#     identifier = "about"
+#     weight = 300
+#     url = "/about/"
