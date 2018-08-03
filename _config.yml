@@ -23,7 +23,6 @@ source_dir: source
 public_dir: public
 tag_dir: tags
 archive_dir: blog
-# archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
@@ -77,21 +76,7 @@ pagination_dir: page
 theme: cactus
 ## Usage: https://github.com/probberechts/hexo-theme-cactus#configuration
 theme_config:
-  favicon:
-    desktop:
-      gravatar: true
-    android:
-      gravatar: true
-    apple:
-      gravatar: true
-  gravatar:
-    email: ericpires9@gmail.com
   highlight: atelier-heath-dark
-  logo:
-    enabled: true
-    width: 50
-    height: 50
-    gravatar: true
   nav:
     home: /
     articles: /blog
@@ -113,4 +98,4 @@ alias:
   github/index.html:   https://github.com/EpicEric
   keybase/index.html:  https://keybase.io/EpicEric
   linkedin/index.html: https://www.linkedin.com/in/eric-rodrigues-pires-19231190/
-  steam/index.html:    http://steamcommunity.com/id/epiceric
+  steam/index.html:    https://steamcommunity.com/id/epiceric
