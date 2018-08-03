@@ -76,7 +76,23 @@ pagination_dir: page
 theme: cactus
 ## Usage: https://github.com/probberechts/hexo-theme-cactus#configuration
 theme_config:
+  favicon:
+    desktop:
+      url: /favicon.ico
+      gravatar: false
+    android:
+      url: /favicon-192x192.png
+      gravatar: false
+    apple:
+      url: /apple-touch-icon.png
+      gravatar: false
   highlight: atelier-heath-dark
+  logo:
+    enabled: true
+    width: 50
+    height: 50
+    url: /images/eric/logo.png
+    gravatar: false
   nav:
     home: /
     articles: /blog
