@@ -13,22 +13,43 @@ npm install
 
 ## Add a post
 
+### Directly
+
 The new post will be created in `source/_posts/my-slug.md`.
 
 ```sh
 hexo new post "New post" -s "my-slug"
 ```
 
+### As a draft
+
+You can create a draft with similar options as you would create a post, changing the layout.
+
+```sh
+hexo new draft "New post" -s "my-slug"
+```
+
+See [Serve locally](#serve-locally) for how to render drafts.
+
+Once satisfied, you can publish the draft to a post.
+
+```sh
+hexo publish "my-slug"
+```
+
+## Serve locally
+
+This will create a development server that watches any changes to files. The `--draft` argument will render any drafts as posts.
+
+```sh
+hexo server --draft
+```
+
 ## Build
 
-Static files will be generated on `build/`.
+You can build static files for deployment in production. They will be generated in `build/`.
 
 ```sh
 hexo generate
 ```
 
-## Serve locally
-
-```sh
-hexo server
-```
